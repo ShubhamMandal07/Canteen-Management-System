@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">canteen</string>
+    <string name="welcome_to_canteen"><u>Welcome to Canteen</u></string>
+    <string name="Login"><u>Login</u>.</string>
+    <string name="SignUp"><u>SignUp</u>.</string>
+    <string name="AdminLogin"><u>Admin Login</u>.</string>
+    <string name="AvailableFoodItems"><u>Available Food Items</u>.</string>
+
+</resources>

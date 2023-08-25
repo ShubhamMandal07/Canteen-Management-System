@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".veg"
+    android:orientation="vertical"
+    android:background="@color/red2"
+    android:gravity="">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="@string/AvailableFoodItems"
+        android:textAlignment="center"
+        app:cardCornerRadius="30dp"
+        android:textColor="@color/red"
+        android:textSize="25sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="392dp"
+        android:layout_height="105dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@drawable/edittext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="402dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center"
+            android:background="@color/red3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/vegbut"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="26dp"
+                android:backgroundTint="@color/red"
+                android:text="veg"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/nonvegbut"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/red"
+                android:text="non-veg"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/bevbut"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/red"
+                android:text="bevrages"
+                app:cornerRadius="20dp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edittext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="420dp"
+            android:layout_height="491dp"
+            android:layout_gravity="center"
+            android:background="@color/red1"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/veg"
+                android:layout_width="366dp"
+                android:layout_height="483dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

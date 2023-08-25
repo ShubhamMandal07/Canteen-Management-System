@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/red"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/admin"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/adminimg"
+        android:textSize="18sp"
+        app:cornerRadius="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="303dp"
+        android:layout_height="218dp"
+        android:layout_marginBottom="10dp"
+        card_view:srcCompat="@drawable/back1" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Canteen App"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/edittext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="414dp"
+            android:layout_height="315dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/red2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="162dp"
+                android:layout_height="77dp"
+                android:backgroundTint="@color/red"
+                android:text="Register"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="161dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/red"
+                android:text="Login"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
